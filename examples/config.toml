@@ -1,0 +1,24 @@
+# Example cprun configuration.
+# Copy to ~/.config/cprun/config.toml (global) or save as cprun.toml in a
+# contest directory (applies to that directory and its subdirectories).
+# Every setting is optional; command-line options override these values.
+
+compiler = "g++"
+standard = "c++17"          # c++11, c++14, c++17, c++20, c++23, gnu++17, ...
+timeout = 2                 # seconds per run
+optimization = "-O2"        # used for normal (release) builds
+color = true                # colors are still disabled when output is not a terminal
+
+# Extra flags for every build, e.g. to enable `#ifdef LOCAL` debug code:
+# flags = ["-DLOCAL"]
+
+# Flags for --debug builds. Sanitizers catch out-of-bounds access and UB:
+# debug_flags = ["-g", "-O0", "-Wall", "-Wextra", "-fsanitize=address,undefined", "-D_GLIBCXX_DEBUG"]
+
+# stack_mb = 1024           # stack size for your program (0 = system default)
+# output_limit_mb = 256     # stop programs that print more than this
+# display_lines = 200       # max output lines shown in the terminal (0 = all)
+# eps = 1e-6                # numeric tolerance for sample comparison
+
+# Codeforces contest id for --cf (best placed in a contest directory's cprun.toml):
+# cf_contest = 1846

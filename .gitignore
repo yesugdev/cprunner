@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.cprun/
+examples/*.in
+examples/*.out
+windows/.cache/
+windows/build/
+dist/

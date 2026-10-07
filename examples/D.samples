@@ -1,0 +1,11 @@
+=== TEST 1 ===
+INPUT
+10 20
+OUTPUT
+30
+
+=== TEST 2 ===
+INPUT
+100 200
+OUTPUT
+300
